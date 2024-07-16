@@ -1,0 +1,29 @@
+javascript:(function() {
+    function deleteElement(selector) {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.remove();
+        }
+    }
+    deleteElement('h1.text-4xl');
+    deleteElement('header.ant-layout-header.css-16kwz01');
+})();
+
+
+
+(function() {
+    function deleteElement(selector) {
+        const element = document.querySelector(selector);
+        if (element) {
+            element.remove();
+        }
+    }
+
+    // Delete the first element immediately
+    deleteElement('h1.text-4xl');
+
+    // Delete the second element after a short delay
+    setTimeout(function() {
+     deleteElement('header.ant-layout-header.css-16kwz01');
+    }, 100); // 100 milliseconds delay
+})();
