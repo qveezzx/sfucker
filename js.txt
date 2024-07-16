@@ -25,5 +25,5 @@ javascript:(function() {
     // Delete the second element after a short delay
     setTimeout(function() {
      deleteElement('header.ant-layout-header.css-16kwz01');
-    }, 100); // 100 milliseconds delay
+    }, 200); // 100 milliseconds delay
 })();
